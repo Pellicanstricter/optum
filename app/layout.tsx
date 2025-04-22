@@ -7,8 +7,8 @@ import { PasswordProtection } from "@/components/password-protection"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "MedicareAdvantage.org by OptumNow",
-  description: "Find the right Medicare plan for your needs with MedicareAdvantage.org by OptumNow.",
+  title: "FindMedicare by OptumNow",
+  description: "Find the right Medicare plan for your needs with FindMedicare by OptumNow.",
     generator: 'v0.dev'
 }
 

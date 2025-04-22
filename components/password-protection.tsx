@@ -42,8 +42,8 @@ export function PasswordProtection({ children }: { children: React.ReactNode }) 
       <Card className="w-full max-w-md">
         <CardHeader>
           <div className="flex items-center gap-1 mb-2">
-            <span className="text-2xl font-bold text-[#FF5F00]">Optum</span>
-            <span className="text-2xl font-bold text-gray-800">Now</span>
+            <span className="text-2xl font-bold text-[#FF5F00]">FindMedicare</span>
+            <span className="text-2xl font-bold text-gray-800"> by OptumNow</span>
           </div>
           <CardTitle className="text-xl">Password Protected</CardTitle>
           <CardDescription>This site is password protected. Please enter the password to continue.</CardDescription>

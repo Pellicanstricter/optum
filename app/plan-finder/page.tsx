@@ -35,8 +35,8 @@ export default function PlanFinder() {
               <span className="sr-only">Menu</span>
             </button>
             <Link href="/" className="flex items-center gap-1">
-              <span className="text-2xl font-bold text-[#FF5F00]">Optum</span>
-              <span className="text-2xl font-bold text-gray-800">Now</span>
+              <span className="text-2xl font-bold text-[#FF5F00]">FindMedicare</span>
+              <span className="text-2xl font-bold text-gray-800"> by OptumNow</span>
             </Link>
             <nav className="hidden md:flex gap-6">
               <Link href="#" className="text-sm font-medium hover:text-[#FF5F00]">
