@@ -42,6 +42,9 @@ export default function Home() {
               <Link href="/resources" className="text-sm font-medium hover:text-[#FF5F00]">
                 Resources
               </Link>
+              <Link href="/about" className="text-sm font-medium hover:text-[#FF5F00]">
+                About Us
+              </Link>
             </nav>
           </div>
           <div className="flex items-center gap-4">
@@ -72,12 +75,13 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-gray-800">
-                    Medicare <span className="text-[#FF5F00]">Advantage</span>
+                    Medicare Made <span className="text-[#FF5F00]">Simple</span>
                     <br />
-                    now
+                    and Personalized
                   </h1>
                   <p className="text-gray-600 md:text-xl max-w-[600px]">
-                    We make Medicare Advantage simple, clear, and personalized to your needs.
+                    We make Medicare Advantage simple, clear, and personalized to your needs with our AI-powered
+                    Pathfinder technology.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -98,6 +102,64 @@ export default function Home() {
                   className="rounded-lg object-cover"
                 />
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full py-12 md:py-16 bg-white">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-gray-800">
+                  Your Complete Medicare Journey
+                </h2>
+                <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
+                  FindMedicare by OptumNow stays with you every step of the way, not just during enrollment.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div className="flex flex-col items-center text-center">
+                <div className="rounded-full bg-[#FFF0E6] p-4 w-16 h-16 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-[#FF5F00]">1</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">GUIDE</h3>
+                <p className="text-gray-600">Expert guidance through the Medicare landscape</p>
+              </div>
+
+              <div className="flex flex-col items-center text-center">
+                <div className="rounded-full bg-[#FFF0E6] p-4 w-16 h-16 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-[#FF5F00]">2</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">DECIDE</h3>
+                <p className="text-gray-600">AI-powered plan recommendations tailored to your needs</p>
+              </div>
+
+              <div className="flex flex-col items-center text-center">
+                <div className="rounded-full bg-[#FFF0E6] p-4 w-16 h-16 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-[#FF5F00]">3</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">TREATMENT</h3>
+                <p className="text-gray-600">Comprehensive onboarding and benefits activation</p>
+              </div>
+
+              <div className="flex flex-col items-center text-center">
+                <div className="rounded-full bg-[#FFF0E6] p-4 w-16 h-16 flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-[#FF5F00]">4</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">TRANSFORMATION</h3>
+                <p className="text-gray-600">Ongoing support and proactive plan optimization</p>
+              </div>
+            </div>
+
+            <div className="flex justify-center mt-10">
+              <Button className="bg-[#FF5F00] hover:bg-[#E55500] text-white" asChild>
+                <Link href="/about">
+                  Learn More About Our Approach
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
             </div>
           </div>
         </section>
@@ -384,9 +446,65 @@ export default function Home() {
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Trusted Experience</h3>
+                <h3 className="text-xl font-bold text-gray-800">ON Member Discounts</h3>
                 <p className="mt-2 text-gray-600">
-                  Backed by UnitedHealth Group's decades of healthcare experience and commitment to quality care.
+                  Exclusive savings on prescriptions, medical supplies, and everyday health products.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="rounded-full bg-[#FFF0E6] p-4 mb-4 w-16 h-16 flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#FF5F00"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-8 w-8"
+                  >
+                    <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+                    <line x1="16" x2="16" y1="2" y2="6" />
+                    <line x1="8" x2="8" y1="2" y2="6" />
+                    <line x1="3" x2="21" y1="10" y2="10" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">Auto-schedule Visits</h3>
+                <p className="mt-2 text-gray-600">
+                  We'll help you schedule doctor visits and send reminders for important appointments.
+                </p>
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="rounded-full bg-[#FFF0E6] p-4 mb-4 w-16 h-16 flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#FF5F00"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-8 w-8"
+                  >
+                    <path d="m9 9-2 2" />
+                    <path d="M13 13 A 1 1 0 0 0 13 13 A 1 1 0 0 0 13 13" />
+                    <path d="M10 13 A 1 1 0 0 0 10 13 A 1 1 0 0 0 10 13" />
+                    <rect width="13" height="13" x="5.5" y="5.5" rx="2" />
+                    <path d="M13.5 10.5c1-1 2.5-1 2.5-1v4c0 1-1 2-2 2" />
+                    <path d="M13.5 10.5V15" />
+                    <path d="M9.5 10.5c-1-1-2.5-1-2.5-1v4c0 1 1 2 2 2" />
+                    <path d="M9.5 10.5V15" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">Prescription Delivery</h3>
+                <p className="mt-2 text-gray-600">
+                  Get your medications delivered right to your door with our convenient service.
                 </p>
               </div>
 
@@ -407,57 +525,9 @@ export default function Home() {
                     <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Comprehensive Benefits</h3>
+                <h3 className="text-xl font-bold text-gray-800">OTC Reminders</h3>
                 <p className="mt-2 text-gray-600">
-                  Access plans with additional benefits like dental, vision, hearing, fitness memberships, and more.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="rounded-full bg-[#FFF0E6] p-4 mb-4 w-16 h-16 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#FF5F00"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-8 w-8"
-                  >
-                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-800">Educational Resources</h3>
-                <p className="mt-2 text-gray-600">
-                  Access clear, straightforward information to help you understand Medicare and make informed decisions.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="rounded-full bg-[#FFF0E6] p-4 mb-4 w-16 h-16 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#FF5F00"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="h-8 w-8"
-                  >
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
-                    <path d="m9 12 2 2 4-4" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold text-gray-800">No-Cost Service</h3>
-                <p className="mt-2 text-gray-600">
-                  Our plan comparison and enrollment assistance services are available at no cost to you.
+                  Smart reminders for OTC benefits and regular plan check-ins to maximize your coverage.
                 </p>
               </div>
 

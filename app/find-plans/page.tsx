@@ -44,6 +44,9 @@ export default function FindPlans() {
               <Link href="/resources" className="text-sm font-medium hover:text-[#FF5F00]">
                 Resources
               </Link>
+              <Link href="/about" className="text-sm font-medium hover:text-[#FF5F00]">
+                About Us
+              </Link>
             </nav>
           </div>
           <div className="flex items-center gap-4">

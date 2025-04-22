@@ -39,14 +39,14 @@ export default function PlanFinder() {
               <span className="text-2xl font-bold text-gray-800"> by OptumNow</span>
             </Link>
             <nav className="hidden md:flex gap-6">
-              <Link href="#" className="text-sm font-medium hover:text-[#FF5F00]">
+              <Link href="/find-plans" className="text-sm font-medium hover:text-[#FF5F00]">
                 Medicare Plans
               </Link>
-              <Link href="#" className="text-sm font-medium hover:text-[#FF5F00]">
-                Find Providers
-              </Link>
-              <Link href="#" className="text-sm font-medium hover:text-[#FF5F00]">
+              <Link href="/resources" className="text-sm font-medium hover:text-[#FF5F00]">
                 Resources
+              </Link>
+              <Link href="/about" className="text-sm font-medium hover:text-[#FF5F00]">
+                About Us
               </Link>
             </nav>
           </div>
